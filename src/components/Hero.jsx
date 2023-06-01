@@ -27,7 +27,7 @@ const Hero = () => {
             whileTap={{ scale: 0.9 }}
             className="w-40 p-2 my-4 bg-gray-900 rounded-lg drop-shadow-lg text-md"
           >
-            Lear More
+            Learn More
           </motion.button>
         </div>
 
@@ -36,7 +36,7 @@ const Hero = () => {
           <img
             src={mainImg}
             alt="mainimage"
-            className="object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-bounce animate-bounce-slow w-[700px]"
+            className="object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-bounce animate-bounce-slow w-[450px]"
           />
         </div>
       </div>
