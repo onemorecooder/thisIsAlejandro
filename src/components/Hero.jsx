@@ -4,6 +4,8 @@ import { HiMinusSmall } from "react-icons/hi2";
 import { motion } from "framer-motion";
 
 import mainImg from "../img/mainImg.png";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Hero = () => {
   return (
@@ -33,10 +35,24 @@ const Hero = () => {
 
         {/* lado derecho */}
         <div className="flex-1 relative">
+          <Canvas>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <Sphere args={[1, 200, 300]} scale={1.5}>
+              <MeshDistortMaterial
+                color="#64b0d1"
+                attach="material"
+                distort={0.5}
+                speed={2}
+                opacity={0.5}
+              />
+            </Sphere>
+          </Canvas>
           <img
             src={mainImg}
             alt="mainimage"
-            className="object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-bounce animate-bounce-slow w-[450px]"
+            className="object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-bounce animate-bounce-slow w-[450px] pointer-events-none"
           />
         </div>
       </div>
