@@ -13,7 +13,7 @@ const Hero = () => {
       <Navbar />
       <div className="h-screen w-3/4 flex justify-between">
         {/* lado izquierdo */}
-        <div className="flex-1 flex flex-col items-end justify-center gap-2">
+        <div className="flex-1 flex flex-col items-end justify-center text-right gap-2 ">
           <p className="font-extrabold text-8xl">Code. Eat. Sleep.</p>
           <div className="flex items-center">
             <HiMinusSmall className="text-6xl" />
