@@ -18,10 +18,10 @@ const Who = () => {
           <p className="font-extrabold text-8xl">Yes, that's me.</p>
           <div className="flex items-center">
             <HiMinusSmall className="text-6xl" />
-            <p className="font-extrabold text-2xl text-gray-900">What I do</p>
+            <p className="font-extrabold text-2xl text-gray-900">What I love</p>
           </div>
           <p className="font-light text-gray-200 text-2xl">
-            I enjoy creatting delightful, human-centered digital experiences.
+            I love creating websites, writing, drawing and 3D modeling.
           </p>
           <motion.button
             whileHover={{

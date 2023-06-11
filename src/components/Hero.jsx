@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="h-screen snap-center flex flex-col items-center justify-between">
       <Navbar />
-      <div className="h-screen w-3/4 flex justify-between">
+      <div className="h-screen flex justify-between">
         {/* lado izquierdo */}
         <div className="flex-1 flex flex-col items-end justify-center text-right gap-2 ">
           <p className="font-extrabold text-8xl">Code. Eat. Sleep.</p>
@@ -36,7 +36,7 @@ const Hero = () => {
         {/* lado derecho */}
         <div className="flex-1 relative">
           <Canvas>
-            <OrbitControls enableZoom={false} />
+            <OrbitControls enableZoom={false} autoRotate={true} />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
             <Sphere args={[1, 200, 300]} scale={1.5}>

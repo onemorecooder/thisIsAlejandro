@@ -9,12 +9,6 @@ const Navbar = () => {
       <div className="w-3/4 flex justify-between items-center pt-5">
         <div className="flex items-center gap-10">
           <img src={img} alt="logo" className="w-60"></img>
-          <ul className="flex gap-10 cursor-pointer">
-            <li>Home</li>
-            <li>Studio</li>
-            <li>Works</li>
-            <li>Contact</li>
-          </ul>
         </div>
 
         <div className="flex items-center gap-4">
