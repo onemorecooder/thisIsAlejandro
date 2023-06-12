@@ -17,11 +17,11 @@ const data = [
 const Works = () => {
   const [work, setWork] = useState("Web Design");
   return (
-    <div className="h-screen snap-center flex justify-center">
-      <div className="w-3/4 flex justify-between">
+    <div className="h-screen snap-center flex justify-center w-screen">
+      <div className="flex w-screen">
         {/* left */}
-        <div className="flex-1 flex items-center">
-          <ul className="flex flex-col gap-2">
+        <div className="justify-end flex text-right w-1/2 items-center mr-24">
+          <ul className="">
             {data.map((item) => (
               <motion.li
                 whileHover={{
@@ -39,7 +39,7 @@ const Works = () => {
         </div>
 
         {/* right */}
-        <div className="flex-1 flex flex-col justify-center gap-2">
+        <div className=" w-1/2 flex flex-col justify-center gap-2 h-screen">
           {work === "Web Design" ? (
             <WebDesign />
           ) : work === "Illustration" ? (

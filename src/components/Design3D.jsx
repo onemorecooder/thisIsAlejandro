@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+/* import Spline from "@splinetool/react-spline"; */
 
 const container = {
   hidden: { y: 20, opacity: 0 },
@@ -11,12 +12,7 @@ const container = {
 
 const Design3D = () => {
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      className=" bg-white rounded-lg shadow-md"
-    >
+    <motion.div variants={container} initial="hidden" animate="visible">
       <div className="text-gray-900">Design3D</div>
     </motion.div>
   );

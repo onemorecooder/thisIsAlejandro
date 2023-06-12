@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="h-screen snap-center flex flex-col items-center justify-between relative">
       <Navbar />
-      <div className="h-screen flex w-full justify-center items-center justify-items-center z-50 absolute pointer-events-none">
+      <div className="h-screen flex w-full justify-center items-center justify-items-center z-50 absolute pointer-events-none mt-16">
         <div className="w-full align-middle justify-items-center text-center">
           <p className="font-extrabold text-8xl">Code. Eat. Sleep.</p>
           <div className="flex items-center w-full justify-center align-middle">
@@ -30,7 +30,7 @@ const Hero = () => {
           </motion.button>
         </div>
       </div>
-      <div className="relative z-10 h-screen w-screen">
+      <div className="relative z-10 h-full w-screen">
         <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
           <Blob />
         </Canvas>

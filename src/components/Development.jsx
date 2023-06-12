@@ -11,12 +11,7 @@ const container = {
 
 const Development = () => {
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      className=" bg-white rounded-lg shadow-md"
-    >
+    <motion.div variants={container} initial="hidden" animate="visible">
       <div className="text-gray-900">Development</div>
     </motion.div>
   );

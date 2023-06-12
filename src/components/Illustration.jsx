@@ -25,7 +25,7 @@ const Illustration = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className=" bg-white rounded-lg shadow-md"
+      className=" bg-white rounded-lg shadow-md m-24"
     >
       <div className="bg-stone-300 rounded-t-lg w-full h-6 flex gap-1 items-center justify-items-center mb-4">
         <div className="bg-red-400 h-3 w-3 rounded-full ml-1"></div>
@@ -34,14 +34,14 @@ const Illustration = () => {
       </div>
       <div className="p-5">
         <a href="https://www.instagram.com/">
-          <img class="w-32" src={logo} alt="Profile"></img>
+          <img className="w-32" src={logo} alt="Profile"></img>
         </a>
         <img
-          class="w-32 h-32 rounded-full mx-auto"
+          className="w-32 h-32 rounded-full mx-auto"
           src={img}
           alt="Profile"
         ></img>
-        <h2 class="text-center text-2xl font-semibold mt-3 text-gray-600">
+        <h2 className="text-center text-2xl font-semibold mt-3 text-gray-600">
           alejandroillustrates
         </h2>
         <div className="flex gap-2 p-4 mx-auto align-middle justify-center font-light">
@@ -82,8 +82,8 @@ const Illustration = () => {
           <li>• ʙᴀʀᴄᴇʟᴏɴᴀ 📍</li>
         </ul>
         <hr />
-        <div class="flex justify-center mt-5">
-          <a href="https://www.instagram.com/p/ClHrWR_su1K/" class="mx-1">
+        <div className="flex justify-center mt-5">
+          <a href="https://www.instagram.com/p/ClHrWR_su1K/" className="mx-1">
             <motion.img
               whileHover={{ filter: "blur(2px)" }}
               className="w-56 h-56"
@@ -91,7 +91,7 @@ const Illustration = () => {
               alt="Profile"
             ></motion.img>
           </a>
-          <a href="https://www.instagram.com/p/Ck31YvDLyRz/" class="mx-1">
+          <a href="https://www.instagram.com/p/Ck31YvDLyRz/" className="mx-1">
             <motion.img
               whileHover={{ filter: "blur(2px)" }}
               className="w-56 h-56"
@@ -99,7 +99,7 @@ const Illustration = () => {
               alt="Profile"
             ></motion.img>
           </a>
-          <a href="https://www.instagram.com/p/CSMsFeXC_zz/" class="mx-1">
+          <a href="https://www.instagram.com/p/CSMsFeXC_zz/" className="mx-1">
             <motion.img
               whileHover={{ filter: "blur(2px)" }}
               className="w-56 h-56"

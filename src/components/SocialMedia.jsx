@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-/* import { FaInstagram, FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
- */
+import Spline from "@splinetool/react-spline";
+
 const container = {
   hidden: { y: 20, opacity: 0 },
   visible: {
@@ -16,7 +16,10 @@ const SocialMedia = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-    ></motion.div>
+      className="h-screen w-3/4"
+    >
+      <Spline scene="https://prod.spline.design/2wGSRgCPjejBOcxr/scene.splinecode" />
+    </motion.div>
   );
 };
 
