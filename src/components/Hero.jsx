@@ -3,58 +3,37 @@ import Navbar from "./Navbar";
 import { HiMinusSmall } from "react-icons/hi2";
 import { motion } from "framer-motion";
 
-import mainImg from "../img/mainImg.png";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+/* import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei"; */
+import Blob from "./Blob/Blob";
 
 const Hero = () => {
   return (
-    <div className="h-screen snap-center flex flex-col items-center justify-between">
+    <div className="h-screen snap-center flex flex-col items-center justify-between relative">
       <Navbar />
-      <div className="h-screen flex justify-between">
-        {/* lado izquierdo */}
-        <div className="flex-1 flex flex-col items-end justify-center text-right gap-2 ">
+      <div className="h-screen flex w-full justify-center items-center justify-items-center z-50 absolute pointer-events-none">
+        <div className="w-full align-middle justify-items-center text-center">
           <p className="font-extrabold text-8xl">Code. Eat. Sleep.</p>
-          <div className="flex items-center">
+          <div className="flex items-center w-full justify-center align-middle">
             <HiMinusSmall className="text-6xl" />
             <p className="font-extrabold text-2xl text-gray-900">What I do</p>
           </div>
           <p className="font-light text-gray-200 text-2xl">
-            I enjoy creatting delightful, human-centered digital experiences.
+            I enjoy creating delightful, human-centered digital experiences.
           </p>
           <motion.button
-            whileHover={{
-              scale: 1.05,
-            }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
-            className="w-40 p-2 my-4 bg-gray-900 rounded-lg drop-shadow-lg text-md"
+            className="w-40 p-2 my-4 bg-gray-900 rounded-lg drop-shadow-lg text-md pointer-events-auto"
           >
             Learn More
           </motion.button>
         </div>
-
-        {/* lado derecho */}
-        <div className="flex-1 relative">
-          <Canvas>
-            <OrbitControls enableZoom={false} autoRotate={true} />
-            <ambientLight intensity={1} />
-            <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 200, 300]} scale={1.5}>
-              <MeshDistortMaterial
-                color="#64b0d1"
-                attach="material"
-                distort={0.5}
-                speed={2}
-                opacity={0.5}
-              />
-            </Sphere>
-          </Canvas>
-          <img
-            src={mainImg}
-            alt="mainimage"
-            className="object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-bounce animate-bounce-slow w-[450px] pointer-events-none"
-          />
-        </div>
+      </div>
+      <div className="relative z-10 h-screen w-screen">
+        <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
+          <Blob />
+        </Canvas>
       </div>
     </div>
   );
