@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="flex justify-center w-screen">
-      <div className="w-3/4 flex justify-between items-center pt-5">
+      <div className="w-3/4 flex flex-col sm:flex-row justify-between items-center pt-5">
         <div className="flex items-center gap-10">
-          <img src={img} alt="logo" className="w-60"></img>
+          <img src={img} alt="logo" className="w-60" />
         </div>
 
         <div className="flex items-center gap-4">
@@ -18,7 +18,7 @@ const Navbar = () => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src={cv} alt="cv" className="w-10 cursor-pointer"></img>
+            <img src={cv} alt="cv" className="w-10 cursor-pointer" />
           </motion.a>
           <motion.button
             whileHover={{
