@@ -4,8 +4,8 @@ import { HiMinusSmall } from "react-icons/hi2";
 
 const Who = () => {
   return (
-    <div className="h-screen snap-center flex justify-center">
-      <div className="h-screen w-3/4 flex flex-col sm:flex-row justify-between">
+    <div className="h-screen snap-center flex justify-center bg-slate-900">
+      <div className="h-full w-3/4 flex flex-col sm:flex-row justify-between">
         {/* lado izquierdo */}
         <div className="flex-1 order-last sm:order-first">
           {/* Contenido lado izquierdo */}

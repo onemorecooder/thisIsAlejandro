@@ -13,7 +13,7 @@ const Works = () => {
     setWork("");
   };
   return (
-    <div className="h-screen snap-center flex justify-center w-screen">
+    <div className="h-screen snap-center flex justify-center w-screen bg-slate-400">
       <div className="flex w-screen">
         {/* body */}
         <div className="justify-center flex text-center w-screen items-center">
