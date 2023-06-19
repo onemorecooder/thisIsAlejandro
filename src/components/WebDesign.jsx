@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Spline from "@splinetool/react-spline";
 
 const container = {
   hidden: { y: 20, opacity: 0 },
@@ -12,20 +11,8 @@ const container = {
 
 const WebDesign = () => {
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      className="h-screen w-screen"
-    >
-      <Spline
-        className="hidden md:block"
-        scene="https://prod.spline.design/g3BQNwTcw3nWS2RI/scene.splinecode"
-      />
-      <Spline
-        className="block md:hidden"
-        scene="https://prod.spline.design/qbknwHsGtwkJVtZM/scene.splinecode"
-      />
+    <motion.div variants={container} initial="hidden" animate="visible">
+      <div className="text-gray-900">Web Design</div>
     </motion.div>
   );
 };
