@@ -9,7 +9,7 @@ import Blob from "./Blob/Blob";
 
 const Hero = () => {
   return (
-    <div className="h-screen snap-center flex flex-col items-center justify-between relative bg-slate-700">
+    <div className="h-screen snap-center flex flex-col items-center justify-between relative">
       <Navbar />
       <div className="h-screen flex w-full justify-center items-center justify-items-center z-50 absolute pointer-events-none mt-16">
         <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 align-middle justify-items-center text-center">

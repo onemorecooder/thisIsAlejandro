@@ -4,6 +4,7 @@ import WebDesign from "./WebDesign";
 import Development from "./Development";
 import Design3D from "./Design3D";
 import Illustration from "./Illustration";
+import CloseButton from "./CloseButton";
 
 const data = ["Web Design", "Development", "Illustration", "3D Design"];
 
@@ -13,7 +14,7 @@ const Works = () => {
     setWork("");
   };
   return (
-    <div className="h-screen snap-center flex justify-center w-screen bg-slate-400">
+    <div className="h-screen snap-center flex justify-center w-screen">
       <div className="flex w-screen">
         {/* body */}
         <div className="justify-center flex text-center w-screen items-center">
@@ -37,23 +38,23 @@ const Works = () => {
         {/* modal */}
         <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
           {work === "Web Design" ? (
-            <div>
-              <button onClick={handleClose}>Close</button>
+            <div className="h-screen">
+              <CloseButton props={handleClose} />
               <WebDesign />
             </div>
           ) : work === "Illustration" ? (
-            <div>
-              <button onClick={handleClose}>Close</button>
+            <div className="h-screen">
+              <CloseButton props={handleClose} />
               <Illustration />
             </div>
           ) : work === "3D Design" ? (
-            <div>
-              <button onClick={handleClose}>Close</button>
+            <div className="h-screen">
+              <CloseButton props={handleClose} />
               <Design3D />
             </div>
           ) : work === "Development" ? (
-            <div>
-              <button onClick={handleClose}>Close</button>
+            <div className="h-screen">
+              <CloseButton props={handleClose} />
               <Development />
             </div>
           ) : (

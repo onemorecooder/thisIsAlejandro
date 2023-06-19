@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen snap-center bg-slate-700">
+    <div className="h-screen snap-center">
       <div className="w-full h-full flex justify-center gap-20 ">
         {/* left */}
         <div className="flex-1 flex items-center justify-end">

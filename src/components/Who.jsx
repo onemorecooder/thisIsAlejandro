@@ -1,16 +1,23 @@
+import { Canvas } from "@react-three/fiber";
 import React from "react";
 import { HiMinusSmall } from "react-icons/hi2";
+import Blob from "./Blob/Blob";
 /* import Spline from "@splinetool/react-spline"; */
 
 const Who = () => {
   return (
-    <div className="h-screen snap-center flex justify-center bg-slate-900">
+    <div className="h-screen snap-center flex justify-center">
       <div className="h-full w-3/4 flex flex-col sm:flex-row justify-between">
         {/* lado izquierdo */}
         <div className="flex-1 order-last sm:order-first">
           {/* Contenido lado izquierdo */}
           {/* <Spline scene="https://prod.spline.design/9dTjW8kozdkmv1jo/scene.splinecode" /> */}
-          Content
+          <Canvas
+            className="-mt-8 sm:mt-0 "
+            camera={{ position: [0.0, 0.0, 8.0] }}
+          >
+            <Blob />
+          </Canvas>
         </div>
 
         {/* lado derecho */}

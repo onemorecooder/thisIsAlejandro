@@ -21,7 +21,7 @@ const container = {
 
 const Illustration = () => {
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
+    <div className="h-fit w-screen flex items-center justify-center">
       <motion.div
         variants={container}
         initial="hidden"
