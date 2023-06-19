@@ -1,6 +1,6 @@
 import React from "react";
 import { HiMinusSmall } from "react-icons/hi2";
-import Spline from "@splinetool/react-spline";
+/* import Spline from "@splinetool/react-spline"; */
 
 const Who = () => {
   return (
@@ -9,7 +9,8 @@ const Who = () => {
         {/* lado izquierdo */}
         <div className="flex-1 order-last sm:order-first">
           {/* Contenido lado izquierdo */}
-          <Spline scene="https://prod.spline.design/9dTjW8kozdkmv1jo/scene.splinecode" />
+          {/* <Spline scene="https://prod.spline.design/9dTjW8kozdkmv1jo/scene.splinecode" /> */}
+          Content
         </div>
 
         {/* lado derecho */}

@@ -30,7 +30,6 @@ const Works = () => {
             ))}
           </ul>
         </div>
-
         {/* right */}
         {/* <div className=" w-1/2 flex flex-col justify-center gap-2 h-screen">
           {work === "Web Design" ? (
@@ -42,7 +41,22 @@ const Works = () => {
           ) : (
             <Development />
           )}
-        </div> */}
+        </div> {/* <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className="h-screen w-screen"
+    >
+      <Spline
+        className="hidden md:block"
+        scene="https://prod.spline.design/g3BQNwTcw3nWS2RI/scene.splinecode"
+      />
+      <Spline
+        className="block md:hidden"
+        scene="https://prod.spline.design/qbknwHsGtwkJVtZM/scene.splinecode"
+      />
+    </motion.div>
+        */}
       </div>
     </div>
   );
