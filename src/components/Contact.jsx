@@ -40,7 +40,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={handleSubmit}
-            className="w-2/4 flex flex-col gap-10"
+            className="w-full md:w-2/4 flex flex-col gap-10 p-4"
           >
             <h1 className="font-light text-4xl">Contact Me</h1>
             <input
@@ -97,7 +97,7 @@ const Contact = () => {
         </div>
 
         {/* right */}
-        <div className="flex-1">
+        <div className="flex-1 hidden sm:block">
           <Map />
         </div>
       </div>

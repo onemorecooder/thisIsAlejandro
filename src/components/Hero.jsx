@@ -13,7 +13,7 @@ const Hero = () => {
       <Navbar />
       <div className="h-screen flex w-full justify-center items-center justify-items-center z-50 absolute pointer-events-none mt-16">
         <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 align-middle justify-items-center text-center">
-          <p className="font-extrabold text-6xl sm:text-8xl">
+          <p className="font-extrabold text-6xl sm:text-8xl ">
             Code. Eat. Sleep.
           </p>
           <div className="flex items-center w-full justify-center align-middle">
@@ -22,7 +22,7 @@ const Hero = () => {
               What I do
             </p>
           </div>
-          <p className="font-light text-gray-200 text-xl sm:text-2xl">
+          <p className="font-light text-gray-200 text-xl sm:text-2xl sm:p-2">
             I enjoy creating delightful, human-centered digital experiences.
           </p>
           <motion.button

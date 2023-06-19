@@ -4,23 +4,19 @@ import WebDesign from "./WebDesign";
 import Development from "./Development";
 import Design3D from "./Design3D";
 import Illustration from "./Illustration";
-import SocialMedia from "./SocialMedia";
 
-const data = [
-  "Web Design",
-  "Development",
-  "Illustration",
-  "3D Design",
-  "Social Media",
-];
+const data = ["Web Design", "Development", "Illustration", "3D Design"];
 
 const Works = () => {
-  const [work, setWork] = useState("Web Design");
+  const [work, setWork] = useState("");
+  const handleClose = () => {
+    setWork("");
+  };
   return (
     <div className="h-screen snap-center flex justify-center w-screen">
       <div className="flex w-screen">
-        {/* left */}
-        <div className="justify-end flex text-right w-1/2 items-center mr-24">
+        {/* body */}
+        <div className="justify-center flex text-center w-screen items-center">
           <ul className="">
             {data.map((item) => (
               <motion.li
@@ -28,7 +24,7 @@ const Works = () => {
                   scale: 1.05,
                 }}
                 whileTap={{ scale: 0.9 }}
-                className="py-4 font-extrabold text-8xl cursor-pointer animate-text bg-gradient-to-r from-purple-900 via-purple-600 to-violet-300 bg-clip-text text-transparent"
+                className=" py-4 font-extrabold text-5xl sm:text-8xl cursor-pointer animate-text bg-gradient-to-r from-purple-900 via-purple-600 to-violet-300 bg-clip-text text-transparent"
                 key={item}
                 onClick={() => setWork(item)}
               >
@@ -38,18 +34,30 @@ const Works = () => {
           </ul>
         </div>
 
-        {/* right */}
-        <div className=" w-1/2 flex flex-col justify-center gap-2 h-screen">
+        {/* modal */}
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
           {work === "Web Design" ? (
-            <WebDesign />
+            <div>
+              <button onClick={handleClose}>Close</button>
+              <WebDesign />
+            </div>
           ) : work === "Illustration" ? (
-            <Illustration />
+            <div>
+              <button onClick={handleClose}>Close</button>
+              <Illustration />
+            </div>
           ) : work === "3D Design" ? (
-            <Design3D />
+            <div>
+              <button onClick={handleClose}>Close</button>
+              <Design3D />
+            </div>
           ) : work === "Development" ? (
-            <Development />
+            <div>
+              <button onClick={handleClose}>Close</button>
+              <Development />
+            </div>
           ) : (
-            <SocialMedia />
+            ""
           )}
         </div>
       </div>

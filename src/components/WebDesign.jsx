@@ -16,9 +16,16 @@ const WebDesign = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="h-screen w-3/4"
+      className="h-screen w-screen"
     >
-      <Spline scene="https://prod.spline.design/g3BQNwTcw3nWS2RI/scene.splinecode" />
+      <Spline
+        className="hidden md:block"
+        scene="https://prod.spline.design/g3BQNwTcw3nWS2RI/scene.splinecode"
+      />
+      <Spline
+        className="block md:hidden"
+        scene="https://prod.spline.design/qbknwHsGtwkJVtZM/scene.splinecode"
+      />
     </motion.div>
   );
 };

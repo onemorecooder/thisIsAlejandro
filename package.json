@@ -8,6 +8,7 @@
     "@react-three/drei": "^9.70.3",
     "@react-three/fiber": "^8.13.0",
     "@react-three/postprocessing": "^2.14.9",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
