@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Table from "./Table";
 
 const container = {
   hidden: { y: 20, opacity: 0 },
@@ -18,7 +19,7 @@ const Development = () => {
         animate="visible"
         className=" bg-white rounded-lg shadow-md m-24 w-screen sm:w-2/4"
       >
-        <div className="text-gray-900">Development</div>
+        <Table />
       </motion.div>
     </div>
   );

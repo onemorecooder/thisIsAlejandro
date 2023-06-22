@@ -11,14 +11,18 @@ const container = {
 
 const WebDesign = () => {
   return (
-    <div className=" w-screen flex items-center justify-center">
+    <div className=" w-screen flex justify-center h-full">
       <motion.div
         variants={container}
         initial="hidden"
         animate="visible"
-        className=" bg-white rounded-lg shadow-md m-24 w-screen sm:w-2/4"
+        className="bg-slate-200 rounded-3xl shadow-md m-24 w-screen sm:w-2/4 h-4/6 "
       >
-        <div className="text-gray-900">Web Design</div>
+        <iframe
+          title="retro-shop"
+          src="https://retro-shop.vercel.app/"
+          className="sm:w-full items-center justify-center w-screen h-full rounded-3xl"
+        ></iframe>
       </motion.div>
     </div>
   );

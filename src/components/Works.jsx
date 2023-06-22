@@ -6,7 +6,7 @@ import Design3D from "./Design3D";
 import Illustration from "./Illustration";
 import CloseButton from "./CloseButton";
 
-const data = ["Web Design", "Development", "Illustration", "3D Design"];
+const data = ["Web Design", "Stack", "Illustration", "3D Design"];
 
 const Works = () => {
   const [work, setWork] = useState("");
@@ -52,7 +52,7 @@ const Works = () => {
               <CloseButton props={handleClose} />
               <Design3D />
             </div>
-          ) : work === "Development" ? (
+          ) : work === "Stack" ? (
             <div className="h-screen">
               <CloseButton props={handleClose} />
               <Development />

@@ -1,0 +1,38 @@
+[
+  {
+    "year": "2016",
+    "school": "Eugeni d'Ors",
+    "title": "HIGHER DEGREE IN WEB APPLICATION DEVELOPMENT",
+    "info": {
+      "one": "Maintenance and repair of computer equipment.",
+      "two": "Network installation and configuration.",
+      "three": "Technical support and user service."
+    },
+    "grade": "Grade",
+    "numericGrade": "8.72"
+  },
+  {
+    "year": "2020",
+    "school": "Cev",
+    "title": "HIGHER DEGREE IN ANIMATION AND VIDEO GAME DEVELOPMENT",
+    "info": {
+      "one": "Design and development of video games.",
+      "two": "Animation and 3D modelling.",
+      "three": "Video game programming and scripting."
+    },
+    "grade": "Grade",
+    "numericGrade": "8.20"
+  },
+  {
+    "year": "2023",
+    "school": "Stucom",
+    "title": "HIGHER DEGREE IN WEB APPLICATION DEVELOPMENT",
+    "info": {
+      "one": "Development of interactive web applications.",
+      "two": "Programming in web languages (HTML, CSS, JavaScript, React).",
+      "three": "Database and web server management."
+    },
+    "grade": "Grade",
+    "numericGrade": "9.27"
+  }
+]
